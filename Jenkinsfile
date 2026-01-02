@@ -14,7 +14,7 @@ pipeline {
  sh 'go test ./...'
  }
  }
- stage('Build') {
+ stage('Buildd') {
  steps {
  git 'https://github.com/databinaries001/ci-cd-demo.git'
  sh 'go build .'
